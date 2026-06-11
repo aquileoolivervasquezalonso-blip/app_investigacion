@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Models\LineaInvestigacion;
@@ -9,7 +10,7 @@ class LineaInvestigacionController extends Controller
 {
     public function index()
     {
-        $lineas = LineaInvestigacion::with('cuerpoAcademico')->orderBy('nombre')->get();
+        $lineas = LineaInvestigacion::with('cuerpoAcademico')->orderBy('id')->get(); 
         $cuerpos = CuerpoAcademico::orderBy('nombre')->get();
         return view('publico.lineas_investigacion', compact('lineas', 'cuerpos'));
     }
