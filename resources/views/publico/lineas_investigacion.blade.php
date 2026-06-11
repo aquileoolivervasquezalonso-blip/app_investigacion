@@ -19,7 +19,7 @@
                 <tr>
                     <th>#</th>
                     <th>Nombre</th>
-                    <th>Cuerpo Académico</th>
+                    <th>Carrera</th>
                     <th>Descripción</th>
                     @auth<th class="text-center">Acciones</th>@endauth
                 </tr>
